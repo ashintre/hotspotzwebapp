@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>HotspotzWebApp</servlet-name>
+		<servlet-class>com.buzzters.hotspotz.ui.HotspotzWebAppServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HotspotzWebApp</servlet-name>
+		<url-pattern>/hotspotzwebapp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LocationUpdaterServlet</servlet-name>
+		<servlet-class>com.buzzters.hotspotz.ui.LocationUpdaterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LocationUpdaterServlet</servlet-name>
+		<url-pattern>/updateLoc.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetContactLocations</servlet-name>
+		<servlet-class>com.buzzters.hotspotz.ui.GetContactLocations</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetContactLocations</servlet-name>
+		<url-pattern>/getContactLocations.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddMeetingPlace</servlet-name>
+		<servlet-class>com.buzzters.hotspotz.ui.AddMeetingPlace</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddMeetingPlace</servlet-name>
+		<url-pattern>/addMeetingPlace.do</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

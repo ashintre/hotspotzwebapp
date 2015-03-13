@@ -1,0 +1,1 @@
+The Web application for the hotspotz Android app
